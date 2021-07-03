@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045258A426909C5500B43461 /* Lion-Roar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 045258A326909C5500B43461 /* Lion-Roar.wav */; };
 		04CDCBC3268F2E10000A1FE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDCBC2268F2E10000A1FE2 /* AppDelegate.m */; };
 		04CDCBC6268F2E10000A1FE2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDCBC5268F2E10000A1FE2 /* SceneDelegate.m */; };
 		04CDCBC9268F2E10000A1FE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CDCBC8268F2E10000A1FE2 /* ViewController.m */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045258A326909C5500B43461 /* Lion-Roar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Lion-Roar.wav"; sourceTree = "<group>"; };
 		04CDCBBE268F2E10000A1FE2 /* MyObjCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyObjCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04CDCBC1268F2E10000A1FE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04CDCBC2268F2E10000A1FE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				04CDCBCA268F2E10000A1FE2 /* Main.storyboard */,
 				04CDCBD0268F2E13000A1FE2 /* Assets.xcassets */,
 				04CDCBD2268F2E13000A1FE2 /* LaunchScreen.storyboard */,
+				045258A326909C5500B43461 /* Lion-Roar.wav */,
 				04CDCC24268F445F000A1FE2 /* Cat.wav */,
 				04CDCBD5268F2E13000A1FE2 /* Info.plist */,
 				04CDCBD6268F2E13000A1FE2 /* main.m */,
@@ -294,6 +297,7 @@
 			files = (
 				04CDCBD4268F2E13000A1FE2 /* LaunchScreen.storyboard in Resources */,
 				04CDCBD1268F2E13000A1FE2 /* Assets.xcassets in Resources */,
+				045258A426909C5500B43461 /* Lion-Roar.wav in Resources */,
 				04CDCBCC268F2E10000A1FE2 /* Main.storyboard in Resources */,
 				04CDCC25268F445F000A1FE2 /* Cat.wav in Resources */,
 			);
