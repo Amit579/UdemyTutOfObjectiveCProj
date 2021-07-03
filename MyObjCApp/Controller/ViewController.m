@@ -39,6 +39,7 @@
     [self navigateToMyNewViewController];
 }
 
+#pragma mark:- push vc to another vc code
 - (void)navigateToMyNewViewController {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     CatSoundViewController *myNewVC = (CatSoundViewController *)[storyboard instantiateViewControllerWithIdentifier:@"catSoundVC"];
