@@ -10,7 +10,10 @@
 
 @interface ViewController : UIViewController{
     SystemSoundID soundID;
+    NSString *word;
+    NSString *name;
 }
+@property (weak, nonatomic) IBOutlet UILabel *setTitleLabel;
 
 - (IBAction)pressMeButton:(id)sender;
 

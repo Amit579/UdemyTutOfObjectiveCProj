@@ -23,7 +23,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
                                         <color key="backgroundColor" red="0.29411764709999999" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Button">
+                                        <state key="normal" title="Click Me...😊">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -66,14 +66,27 @@
                                     <action selector="moveToNextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IkP-e0-c0L"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Id-HB-6h2">
+                                <rect key="frame" x="20" y="105" width="374" height="40"/>
+                                <color key="backgroundColor" red="0.79992932080000001" green="0.80004525179999997" blue="0.79990392919999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="rnK-kI-K3e"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6ge-CH-F4s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="176" id="1ZA-uS-wVJ"/>
+                            <constraint firstItem="1Id-HB-6h2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="06J-oe-u5B"/>
+                            <constraint firstItem="6ge-CH-F4s" firstAttribute="top" secondItem="1Id-HB-6h2" secondAttribute="bottom" constant="75" id="2Sn-df-avN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Id-HB-6h2" secondAttribute="trailing" constant="20" id="BZZ-pH-c9R"/>
                             <constraint firstItem="6ge-CH-F4s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="aNi-BY-LtS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="urE-9O-Rbp" secondAttribute="trailing" constant="20" id="aYV-yc-4bj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ge-CH-F4s" secondAttribute="trailing" constant="20" id="eMi-U0-BYH"/>
+                            <constraint firstItem="1Id-HB-6h2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="kvj-D2-ekg"/>
                             <constraint firstItem="urE-9O-Rbp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mF0-sf-BVk"/>
                             <constraint firstItem="urE-9O-Rbp" firstAttribute="top" secondItem="6ge-CH-F4s" secondAttribute="bottom" constant="57" id="tNb-yE-iME"/>
                         </constraints>
@@ -81,6 +94,7 @@
                     <navigationItem key="navigationItem" title="My practice App" id="V0c-dG-YF5"/>
                     <connections>
                         <outlet property="changeTitleLabel" destination="Y28-n3-9Vm" id="9p2-kp-DOj"/>
+                        <outlet property="setTitleLabel" destination="1Id-HB-6h2" id="CsE-UV-cK9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -92,11 +106,11 @@
             <objects>
                 <viewController storyboardIdentifier="catSoundVC" title="Meowww...!!!" id="Cdw-vE-XVc" customClass="CatSoundViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="smi-sA-jf3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="ftL-F1-Xm7">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meow!!!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgN-PH-wAb">
                                 <rect key="frame" x="47" y="20" width="320" height="180"/>
@@ -108,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sv-nf-lkQ">
-                                <rect key="frame" x="47" y="340" width="320" height="320"/>
+                                <rect key="frame" x="47" y="340" width="320" height="276"/>
                                 <state key="normal" image="cat"/>
                                 <connections>
                                     <action selector="cat:" destination="Cdw-vE-XVc" eventType="touchUpInside" id="hfh-de-ZOx"/>
@@ -131,6 +145,7 @@
                             <constraint firstItem="xb0-Ru-nHc" firstAttribute="bottom" secondItem="8sv-nf-lkQ" secondAttribute="bottom" constant="76" id="y2q-1C-6Kn"/>
                         </constraints>
                     </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
                         <outlet property="label" destination="JgN-PH-wAb" id="h3q-ui-dlB"/>
                     </connections>
@@ -144,9 +159,10 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pWx-vq-cXk" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LoP-bs-COu">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorTransitionMaskImage="arrowtriangle.backward.circle" catalog="system" id="LoP-bs-COu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.90436005590000001" green="0.55345535280000002" blue="0.43669164179999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -160,7 +176,7 @@
     </scenes>
     <designables>
         <designable name="aHT-z4-AJI">
-            <size key="intrinsicContentSize" width="63" height="36"/>
+            <size key="intrinsicContentSize" width="121" height="36"/>
         </designable>
         <designable name="urE-9O-Rbp">
             <size key="intrinsicContentSize" width="139" height="47"/>
@@ -168,6 +184,7 @@
     </designables>
     <resources>
         <image name="Background" width="1200" height="1200"/>
+        <image name="arrowtriangle.backward.circle" catalog="system" width="128" height="121"/>
         <image name="cat" width="900" height="978"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    word = @"Hello,";
+    name = @"Amit Dev";
+    
+    self.setTitleLabel.text = [NSString stringWithFormat:@"%@ %@",word,name];
+    self.setTitleLabel.layer.masksToBounds = true;
+    self.setTitleLabel.layer.cornerRadius = 20.0;
     
     self.changeTitleLabel.text = @"i am here!";
     self.changeTitleLabel.layer.masksToBounds = true;
