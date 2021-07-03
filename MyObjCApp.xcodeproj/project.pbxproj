@@ -121,8 +121,8 @@
 			isa = PBXGroup;
 			children = (
 				04CDCC30268F44CC000A1FE2 /* Delegate */,
-				04CDCC2F268F44B9000A1FE2 /* Controller */,
 				04CDCBFC268F3937000A1FE2 /* Common Files */,
+				04CDCC2F268F44B9000A1FE2 /* Controller */,
 				04CDCBCA268F2E10000A1FE2 /* Main.storyboard */,
 				04CDCBD0268F2E13000A1FE2 /* Assets.xcassets */,
 				04CDCBD2268F2E13000A1FE2 /* LaunchScreen.storyboard */,
