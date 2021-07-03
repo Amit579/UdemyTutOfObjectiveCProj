@@ -1,0 +1,21 @@
+//
+//  ViewController.h
+//  MyObjCApp
+//
+//  Created by wanderer on 02/07/21.
+//
+
+#import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+
+@interface ViewController : UIViewController{
+    SystemSoundID soundID;
+}
+
+- (IBAction)pressMeButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UILabel *changeTitleLabel;
+- (IBAction)moveToNextButton:(id)sender;
+
+@end
+
