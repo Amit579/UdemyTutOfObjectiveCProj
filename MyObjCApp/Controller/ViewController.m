@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "CatSoundViewController.h"
+#import "ListingViewController.h"
 
 @interface ViewController ()
 
@@ -35,6 +36,18 @@
 }
 
 
+
+#pragma mark:- push vc to another vc code
+- (IBAction)listingButton:(id)sender {
+    [self navigateToViewController];
+}
+
+#pragma mark:- push vc to another vc code
+-(void)navigateToViewController{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ListingViewController *myNewVC = (ListingViewController *)[storyboard instantiateViewControllerWithIdentifier:@"listingVC"];
+    [self.navigationController pushViewController:myNewVC animated:YES];
+}
 
 
 - (IBAction)moveToNextButton:(id)sender {

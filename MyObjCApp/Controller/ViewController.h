@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *changeTitleLabel;
 - (IBAction)moveToNextButton:(id)sender;
+- (IBAction)listingButton:(id)sender;
 
 @end
 
