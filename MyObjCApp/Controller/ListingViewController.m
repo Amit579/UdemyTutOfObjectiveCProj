@@ -15,17 +15,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    NSArray *myArray = @[@"localAmitDev",@"localAmitDevel",@"localAmitDevlop",@"localAmitDevlope"];
+    self.titleLabel1.text = myArray[0];
+    self.titleLabel2.text = myArray[1];
+    self.titleLabel3.text = myArray[2];
+    self.titleLabel4.text = myArray[3];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
