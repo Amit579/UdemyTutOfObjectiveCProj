@@ -20,7 +20,11 @@
     self.titleLabel2.text = myArray[1];
     self.titleLabel3.text = myArray[2];
     self.titleLabel4.text = myArray[3];
-    
+    [self triggerCondition];
+}
+
+#pragma mark:- triggerCondition
+-(void)triggerCondition{
     //if else statment
     BOOL state = false;
     if (state == true){
@@ -62,11 +66,41 @@
     /// AND (&&) statment
     NSString *food1 = @"Pizza";
     NSString *food2 = @"Burger";
- 
+    
     if ([food1 isEqualToString:@"Pizza"] && [food2 isEqualToString:@"Burger"]){
         self.titleLabel5.text = @"Match With Pizza";
     }else{
         self.titleLabel5.text = @"No Food Match";
+    }
+    
+    /// For Loop
+    int numberForLoop;
+    for (numberForLoop = 20; numberForLoop>0; numberForLoop -= 1) {
+        NSLog(@"%i",numberForLoop);
+    }
+    
+    /// while loop
+    int noWhileLoop = 0;
+    while (noWhileLoop < 10) {
+        noWhileLoop += 1;
+        NSLog(@"%i",noWhileLoop);
+    }
+    
+    ///Switch Statment
+    int switchNumber = 3;
+    switch (switchNumber) {
+        case 1:
+            NSLog(@"Condition Met 1");
+            break;
+        case 2:
+            NSLog(@"Condition Met 2");
+            break;
+        case 3:
+            NSLog(@"Condition Met 3");
+            break;
+        default:
+            NSLog(@"Not Available");
+            break;
     }
 }
 
