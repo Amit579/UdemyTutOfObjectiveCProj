@@ -49,6 +49,25 @@
     }else{
         self.titleLabel3.text = @"Default";
     }
+    
+    /// OR (||) statment
+    NSString *Color = @"Black";
+    if ([Color isEqualToString:@"Red"] || [Color isEqualToString:@"Blue"]){
+        self.titleLabel5.text = @"Blacckk";
+    }else{
+        self.titleLabel5.text = @"No Match";
+    }
+    
+    
+    /// AND (&&) statment
+    NSString *food1 = @"Pizza";
+    NSString *food2 = @"Burger";
+ 
+    if ([food1 isEqualToString:@"Pizza"] && [food2 isEqualToString:@"Burger"]){
+        self.titleLabel5.text = @"Match With Pizza";
+    }else{
+        self.titleLabel5.text = @"No Food Match";
+    }
 }
 
 
